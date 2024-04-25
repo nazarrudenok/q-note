@@ -7,9 +7,9 @@ from flask import (Flask,
 from config import conn, cursor
 import hashlib
 import datetime
-import locale
+# import locale
 
-locale.setlocale(locale.LC_TIME, 'uk_UA')
+# locale.setlocale(locale.LC_TIME, 'uk_UA')
 
 
 
