@@ -164,4 +164,4 @@ def delete_note():
 
 if __name__ == '__main__':
     # app.run(debug=True, host= '192.168.1.249')
-    app.run(debug=False, host='https://q-note-2.onrender.com')
+    app.run(debug=False, host='https://q-note.netlify.app')
