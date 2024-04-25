@@ -164,4 +164,4 @@ def delete_note():
 
 if __name__ == '__main__':
     # app.run(debug=True, host= '192.168.1.249')
-    app.run(host='https://q-note.onrender.com')
+    app.run()
