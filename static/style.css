@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;
+    color: #909090;
+    font-family: "Jura", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    user-select: none;
+}
+
+.main {
+    padding: 0 10px;
+}
+
+.logo {
+    border-bottom: 2px solid #909090;
+}
+
+.logo, .nav-item {
+    font-size: 22px;
+    transition: all .15s;
+}
+
+.login {
+    padding: 1px 10px;
+    border: 2px solid #909090;
+    border-radius: 10px;
+}
+
+.login:hover {
+    background: #909090;
+    color: #000000;
+}
+
+.new, .submit {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding: 2.5px 10px;
+    border: 2px solid #909090;
+    background: #909090;
+    color: #000000;
+    border-radius: 10px;
+    user-select: none;
+    font-weight: 600;
+    transition: all .15s;
+}
+
+.new:hover, .submit:hover, .del:hover {
+    background: #000000;
+    color: #909090;
+}
+
+.username {
+    color: #ffffff;
+}
+
+.user-notes {
+    margin-top: 20px;
+}
+
+.note {
+    border-bottom: 2px solid #909090;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note:hover {
+    cursor: pointer;
+}
+
+.note:last-child {
+    margin-bottom: 50px;
+}
+
+.hello {
+    text-align: right;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inp {
+    font-family: "Jura", sans-serif;
+    background: #000000;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: #909090;
+    font-weight: 600;
+}
+
+.inp::placeholder {
+    font-weight: 600;
+}
+
+.title {
+    text-align: right;
+}
+
+.area {
+    font-size: 25px;
+}
+
+.submit {
+    font-family: "Jura", sans-serif;
+}
+
+.del {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding: 2.5px 10px;
+    border: 2px solid #909090;
+    background: #909090;
+    color: #000000;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.info-value {
+    color: #ffffff;
+}
+
+.achievement {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px; 
+}
+
+.info {
+    font-size: 25px;
+    border-bottom: 2px solid #909090;
+}
+
+.new:hover,
+.nav-item:hover,
+.logo:hover,
+.submit:hover {
+    cursor: pointer;
+}
+
+.logo:hover {
+    border-bottom: 2px solid #000000;
+}
+
+.m-reg {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reg-log {
+    border-bottom: 2px solid #909090;
+}
+
+.-login {
+    text-decoration: underline;
+    user-select: none;
+}
+
+.error {
+    color: #ffffff;
+}
+
+.add {
+    font-weight: 600;
+}
+
+.add {
+    cursor: pointer;
+}
+
+.n-date {
+    font-size: 12.5px;
+    text-align: right;
+}

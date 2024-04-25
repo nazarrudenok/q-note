@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-note</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo" onclick="window.location.href='/'">q-note</h1>
+        <div class="nav">
+            <h1 class="nav-item login" onclick="window.location.href='{{action}}'">{{login}}</h1>
+        </div>
+    </header>
+    <h1 class="nav-item new" onclick="window.location.href='/new-note'">Нова нотатка</h1>
+    <main class="main">
+        <h1 class="hello">Вітаю,<br><span class="username">@{{login}}</span></h1>
+        <div class="user-notes">
+            {% if notes %}
+                {% for note in notes %}
+                    <div class="note" onclick="window.location.href='/note?id={{ note.0 }}'">
+                        <h1 class="n-title">
+                            {% if note.1|length > 14 %}
+                                {{ note.1[:14] | safe }}...
+                            {% else %}
+                                {{ note.1 | safe }}
+                            {% endif %}
+                        </h1>
+                        <h1 class="n-date">
+                            {{ note.3|safe }}
+                        </h1>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h1 class="title">Немає жодної нотатки</h1>
+            {% endif %}
+        </div>
+    </main>
+    <script>
+        
+    </script>
+</body>
+</html>

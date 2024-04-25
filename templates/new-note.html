@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-note</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="nav-item login" onclick="window.location.href='/'">Назад</h1>
+    </header>
+    <main class="main">
+        <div class="note-container">
+            <!-- <h1 class="title t2">Нова нотатка</h1> -->
+            <form action="/note-submit" method="post" class="form">
+                <input type="text" autocomplete="off" placeholder="Заголовок" name="title" class="inp" required="yes">
+                <textarea name="text" cols="30" rows="15" placeholder="..." autocomplete="off" class="inp area"></textarea>
+                <input type="submit" value="Готово" class="submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

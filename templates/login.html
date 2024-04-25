@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-note</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo" onclick="window.location.href='/'">q-note</h1>
+    </header>
+    <main class="main m-reg">
+        <h1 class="error">{{error}}</h1>
+        <h1 class="title">Увійди у свій<br>профіль</h1>
+        <form action="/log" method="post" class="form">
+            <input type="text" autocomplete="off" placeholder="Ім'я користувача" name="username" class="inp reg-log">
+            <input type="password" autocomplete="off" placeholder="Пароль" name="password" class="inp reg-log">
+            <input type="submit" value="Увійти" class="submit">
+        </form>
+        <p class="add">Ще не маєте профілю? <span class="-login" onclick="window.location.href='/register'">Зареєструйтесь</span></p>
+    </main>
+</body>
+</html>

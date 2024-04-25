@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-note</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo" onclick="window.location.href='/'">q-note</h1>
+        <div class="nav">
+            <h1 class="nav-item login" onclick="window.location.href='/logout'">Вийти</h1>
+        </div>
+    </header>
+    <h1 class="nav-item new">Налаштування</h1>
+    <main class="main">
+        <!-- <h1 class="hello">Вітаю,<br><span class="username">@{{username}}!</span></h1> -->
+
+        <h1 class="title">@{{username}}</h1>
+        <h1 class="title achievement">• {{achievement}}</h1>
+
+        <h1 class="info">Ти створив <span class="info-value">{{notes}}</span> нотаток</h1>
+    </main>
+</body>
+</html>
